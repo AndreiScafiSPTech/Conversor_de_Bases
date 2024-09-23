@@ -24,7 +24,7 @@ Ele foi realizado como uma atividade para a faculdade São Paulo Tech School.
 
 ## Como Usar
 
-1. Acesse a aplicação através do link: [Conversor de Bases](https://gustavosptech.github.io/Conversor_de_Bases/Conversor.html).
+1. Acesse a aplicação através do link: [Conversor de Bases](https://andreiscafisptech.github.io/Conversor_de_Bases/Conversor.html).
 2. Selecione a base desejada usando os botões na parte superior da página.
 3. Digite o número que deseja converter no campo apropriado.
 4. Os resultados das conversões aparecerão abaixo do campo de entrada.
