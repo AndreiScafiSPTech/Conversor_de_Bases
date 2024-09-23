@@ -13,7 +13,7 @@ function converterDecimal() {
 
     if (/^[0-9]+$/.test(valorDecimal)) {
         const decimal = parseInt(valorDecimal);
-    
+
         const binario = decimal.toString(2);
         document.getElementById("decimal_binario").textContent = binario;
 
@@ -24,14 +24,14 @@ function converterDecimal() {
         document.getElementById("decimal_hexadecimal").textContent = hexadecimal;
 
         document.getElementById("resultado_erro_decimal").textContent = '';
-        
+
     } else {
         document.getElementById("resultado_erro_decimal").textContent = 'ERRO!! Digite apenas números!';
         document.getElementById("decimal_binario").textContent = '';
         document.getElementById("decimal_octal").textContent = '';
         document.getElementById("decimal_hexadecimal").textContent = '';
     }
-    
+
 }
 
 
@@ -187,3 +187,17 @@ btnHexadecimal.addEventListener('click', () => {
     idHexadecimal.classList.add("visible");
     apagarConteudoDaDiv()
 });
+
+function apagarConteudoDaDiv() {
+    const divs = document.getElementsByClassName("apagar");
+    for (let i = 0; i < divs.length; i++) {
+        const element = divs[i];
+        element.innerHTML = "";
+    }
+
+    const divs2 = document.getElementsByClassName("input_valor");
+    for (let i = 0; i < divs2.length; i++) {
+        const element2 = divs2[i];
+        element2.value = "";
+    }
+}
